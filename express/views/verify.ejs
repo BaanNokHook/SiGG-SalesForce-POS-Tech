@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+ 
+<div class="container">
+  <h2>Virify CODE:: <%= Verify %></h2>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">Company</div>
+      <div class="panel-body"><%= arrayCode[0] %></div>
+    </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">Brand</div>
+      <div class="panel-body"><%= arrayCode[1] %></div>
+    </div>
+
+    <div class="panel panel-success">
+      <div class="panel-heading">Outlet</div>
+      <div class="panel-body"><%= arrayCode[2] %></div>
+    </div>
+
+    <div class="panel panel-info">
+      <div class="panel-heading">Table</div>
+      <div class="panel-body"><%= arrayCode[3] %></div>
+    </div>
+
+    <div class="panel panel-warning">
+      <div class="panel-heading">StartTime</div>
+      <div class="panel-body"><%= arrayCode[4] %></div>
+    </div>
+
+    <div class="panel panel-danger">
+      <div class="panel-heading">Verify Result</div>
+      <div class="panel-body">
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lazy loading images 4 Col</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/lazy/bootstrap-lazy-load.css" rel="stylesheet">
+      </head>
+    
+    <body>
+        <div id="theGrid">
+			<div class="container">
+				<div class="row" id="recipegrid">
+					<% for(var i=0; i < 30; i++) {%>
+					<div class="col-3 box" >
+						<div class="imgHolder">
+							<img src="https://www.solodev.com/_/images/client-loader.gif" data-echo="http://192.168.0.45:4000/uploads/default/001.jpg" class="img-responsive cover">
+							<div class="in-box w-100">
+								<div class="super-box h-100 w-100 text-center d-flex justify-content-center align-items-center">
+									<div class="box-text">
+										<p class="font-weight-bold">View Tutorial</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="description-box">
+							<p class="article_name font-weight-bold text-center">Add Text Transitions to Your Hero Sliders</p>
+						</div>
+					</div>
+					
+					<div class="col-3 box" >
+						<div class="imgHolder">
+							<img src="https://www.solodev.com/_/images/client-loader.gif" data-echo="http://192.168.0.45:4000/uploads/default/002.jpg" class="img-responsive cover">
+							<div class="in-box w-100">
+								<div class="super-box h-100 w-100 text-center d-flex justify-content-center align-items-center">
+									<div class="box-text">
+										<p class="font-weight-bold">View Tutorial</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="description-box">
+							<p class="article_name font-weight-bold text-center">Add Text Transitions to Your Hero Sliders</p>
+						</div>
+					</div>
+
+
+					<div class="col-3 box" >
+						<div class="imgHolder">
+							<img src="https://www.solodev.com/_/images/client-loader.gif" data-echo="http://192.168.0.45:4000/uploads/default/003.jpg" class="img-responsive cover">
+							<div class="in-box w-100">
+								<div class="super-box h-100 w-100 text-center d-flex justify-content-center align-items-center">
+									<div class="box-text">
+										<p class="font-weight-bold">View Tutorial</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="description-box">
+							<p class="article_name font-weight-bold text-center">Add Text Transitions to Your Hero Sliders</p>
+						</div>
+					</div>
+
+
+					<div class="col-3 box" >
+						<div class="imgHolder">
+							<img src="https://www.solodev.com/_/images/client-loader.gif" data-echo="http://192.168.0.45:4000/uploads/default/004.jpg" class="img-responsive cover">
+							<div class="in-box w-100">
+								<div class="super-box h-100 w-100 text-center d-flex justify-content-center align-items-center">
+									<div class="box-text">
+										<p class="font-weight-bold">View Tutorial</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="description-box">
+							<p class="article_name font-weight-bold text-center">Add Text Transitions to Your Hero Sliders</p>
+						</div>
+					</div>
+					<!-- END-SECTION -->
+					<% } %>
+			</div>
+		</div>
+		
+		<script src="https://rawgit.com/toddmotto/echo/master/dist/echo.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+		<script src="bootstrap-lazy-load.js"></script>
+    </body>
+</html>
+
+
+
+
+
+

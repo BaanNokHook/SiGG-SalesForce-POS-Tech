@@ -1,0 +1,31 @@
+{
+    "debugging": true,
+    "CompanyId":"003",
+    "BrandId":"001",
+    "OutletId":"001",
+    "DelayTimeServer":45,
+    "DelayTimeOutScreen": 1,
+    "mockup": 0,
+    "API_ENDPOINTS": {
+      "localhost" : {
+        "production": "false" ,
+        "apiUrl" : "http://127.0.0.1:88",
+        "apiRealTime" : "http://127.0.0.1:8000"
+      },
+      "production" : {
+        "production": "true" ,
+        "apiUrl" : "http://192.168.1.2:88",
+        "apiRealTime" : "http://192.168.1.2:8000"
+      }
+    },
+    "OTHER":{
+      "language": "english",
+      "app" : {
+          "version" : "1.0.0",
+          "datetime" : "20190723-090000",
+          "codeName" : "ClexpertMobileDemo",
+          "teamname" : "POS3IMOBILE",
+          "dev" :[]
+      }
+    }
+  }

@@ -1,0 +1,44 @@
+{
+    "color": "#875eaa",
+    "debugging": true,
+    "CompanyId":"000",
+    "BrandId":"000",
+    "OutletId":"000",
+    "DelayTimeServer":45,
+    "DelayTimeOutScreen": 1,
+    "mockup": 0,
+    "product_theme": 3,
+    "color_price_text": "#fff",
+    "color_price_color": "",
+    "befor_price_order": "",
+    "after_price_order": ".-",
+    "KitchenNote": true,
+    "colorbg": "#fff",
+    "ClossedAll": true, 
+    "API_ENDPOINTS": {
+      "localhost" : {
+        "production": "false" ,
+        "apiUrl" : "http://127.0.0.1:88",
+        "apiRealTime" : "http://127.0.0.1:8000"
+      },
+      "production" : {
+        "production": "true" ,
+        "apiUrl" : "http://192.168.40.44:8100",
+        "apiRealTime" : "http://192.168.40.44:8000",
+        "apiRealTimeBackoffice" : "http://127.0.0.1:8888/backoffice_sukimee"
+        
+      }
+    },
+    "OTHER":{
+      "language": "english",
+      "app" : {
+          "version" : "1.0.0",
+          "datetime" : "20190723-090000",
+          "codeName" : "ClexpertMobileForCloud-withYentaFour",
+          "teamname" : "POS3IMOBILE",
+          "dev" :[]
+      }
+    }
+  }
+
+  

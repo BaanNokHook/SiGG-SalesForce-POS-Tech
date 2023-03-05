@@ -1,0 +1,400 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191210.170630.5844.0.001.json",
+    "dumpEventTime": "2019-12-10T17:06:30Z",
+    "dumpEventTimeStamp": "1575972390773",
+    "processId": 5844,
+    "cwd": "C:\\Users\\CLIT-MOBILE\\Desktop\\MyAngular7SelfOrder - REQ\\express",
+    "commandLine": [
+      "node",
+      "C:\\Users\\CLIT-MOBILE\\AppData\\Roaming\\npm\\node_modules\\pm2\\lib\\ProcessContainerFork.js"
+    ],
+    "nodejsVersion": "v12.10.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.10.0",
+      "v8": "7.6.303.29-node.16",
+      "uv": "1.31.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.10.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 4571187,
+        "nice": 0,
+        "sys": 4832937,
+        "idle": 25290671,
+        "irq": 404765
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 2865328,
+        "nice": 0,
+        "sys": 2956781,
+        "idle": 28872218,
+        "irq": 91843
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 5814671,
+        "nice": 0,
+        "sys": 4298031,
+        "idle": 24581625,
+        "irq": 98703
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 3689750,
+        "nice": 0,
+        "sys": 2588015,
+        "idle": 28416546,
+        "irq": 73953
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 4925953,
+        "nice": 0,
+        "sys": 6469328,
+        "idle": 23299031,
+        "irq": 126750
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 4309046,
+        "nice": 0,
+        "sys": 9596890,
+        "idle": 20788375,
+        "irq": 156437
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 5084687,
+        "nice": 0,
+        "sys": 5591968,
+        "idle": 24017656,
+        "irq": 96187
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
+        "speed": 1992,
+        "user": 3919515,
+        "nice": 0,
+        "sys": 3148187,
+        "idle": 27626609,
+        "irq": 53937
+      }
+    ],
+    "host": "NB-MOBILE"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff608536eb9",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff60853b24c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff60853a1f8",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff6086263cb",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff608e1976e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff608e01711",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff608ccf1cc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff608cd6d81",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff608ccc7a3",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff608ccb044",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff608cea855",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff608a594ed",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff60923300d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000002316f196cec",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 15540224,
+    "totalCommittedMemory": 15540224,
+    "usedMemory": 11218936,
+    "availableMemory": 2187272376,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31432,
+        "available": 230400
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047328,
+        "used": 1047320,
+        "available": 8
+      },
+      "old_space": {
+        "memorySize": 11644928,
+        "committedMemory": 11644928,
+        "capacity": 11620240,
+        "used": 8467344,
+        "available": 3152896
+      },
+      "code_space": {
+        "memorySize": 1212416,
+        "committedMemory": 1212416,
+        "capacity": 922432,
+        "used": 745760,
+        "available": 176672
+      },
+      "map_space": {
+        "memorySize": 790528,
+        "committedMemory": 790528,
+        "capacity": 789280,
+        "used": 399280,
+        "available": 390000
+      },
+      "large_object_space": {
+        "memorySize": 532480,
+        "committedMemory": 532480,
+        "capacity": 524344,
+        "used": 524344,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047328,
+        "used": 0,
+        "available": 1047328
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 36.39,
+    "kernelCpuSeconds": 9.625,
+    "cpuConsumptionPercent": 0.143519,
+    "maxRss": 33492992,
+    "pageFaults": {
+      "IORequired": 4286092,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 2832,
+      "writes": 32476
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANDROID_HOME": "C:\\Android\\android-sdk",
+    "APPDATA": "C:\\Users\\CLIT-MOBILE\\AppData\\Roaming",
+    "automation": "true",
+    "autorestart": "true",
+    "axm_actions": "",
+    "axm_dynamic": "[object Object]",
+    "axm_monitor": "[object Object]",
+    "axm_options": "[object Object]",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132130845593138794",
+    "CLASSPATH": ".;",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "NB-MOBILE",
+    "ComSpec": "C:\\Windows\\system32\\cmd.exe",
+    "created_at": "1575940329231",
+    "DART_SDK": "C:\\Program Files\\Dart\\dart-sdk",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "env": "[object Object]",
+    "exec_interpreter": "node",
+    "exec_mode": "fork_mode",
+    "GOPATH": "C:\\Users\\CLIT-MOBILE\\go",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\CLIT-MOBILE",
+    "instances": "1",
+    "instance_var": "NODE_APP_INSTANCE",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_211",
+    "kill_retry_time": "100",
+    "km_link": "false",
+    "LOCALAPPDATA": "C:\\Users\\CLIT-MOBILE\\AppData\\Local",
+    "LOGONSERVER": "\\\\NB-MOBILE",
+    "merge_logs": "true",
+    "name": "app",
+    "NODE_APP_INSTANCE": "0",
+    "node_args": "",
+    "NUMBER_OF_PROCESSORS": "8",
+    "NVM_HOME": "C:\\Users\\CLIT-MOBILE\\AppData\\Roaming\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Program Files\\PowerShell\\6;C:\\Program Files\\ImageMagick-7.0.9-Q16;;C:\\Windows\\System32\\Wbem;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\CLIT-MOBILE\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Users\\CLIT-MOBILE\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Symfony;C:\\Program Files (x86)\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Users\\CLIT-MOBILE\\.windows-build-tools\\python27\\;C:\\Users\\CLIT-MOBILE\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\;C:\\Windows\\System32;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\CLIT-MOBILE\\go\\bin;C:\\sdk\\flutter\\bin;C:\\Go\\bin;C:\\Android\\android-sdk\\platform-tools;C:\\Android\\android-sdk\\tools;C:\\Android\\android-sdk\\build-tools\\29.0.1;C:\\Program Files\\Java\\jdk1.8.0_211\\bin;C:\\Users\\CLIT-MOBILE\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\CPS\\xampp\\mysql\\bin;C:\\Windows\\System32\\OpenSSH;C:\\Users\\CLIT-MOBILE\\AppData\\Roaming\\npm;C:\\NASM;C:\\gradle\\bin;C:\\Dev-Cpp\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PM2_HOME": "C:\\Users\\CLIT-MOBILE\\.pm2",
+    "PM2_USAGE": "CLI",
+    "pmx": "true",
+    "pm_cwd": "C:\\Users\\CLIT-MOBILE\\Desktop\\MyAngular7SelfOrder - REQ\\express",
+    "pm_err_log_path": "C:\\Users\\CLIT-MOBILE\\.pm2\\logs\\app-error.log",
+    "pm_exec_path": "C:\\Users\\CLIT-MOBILE\\Desktop\\MyAngular7SelfOrder - REQ\\express\\app.js",
+    "pm_id": "1",
+    "pm_out_log_path": "C:\\Users\\CLIT-MOBILE\\.pm2\\logs\\app-out.log",
+    "pm_pid_path": "C:\\Users\\CLIT-MOBILE\\.pm2\\pids\\app-1.pid",
+    "pm_uptime": "1575940329231",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e0c",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Users\\CLIT-MOBILE\\Documents\\PowerShell\\Modules;C:\\Program Files\\PowerShell\\Modules;c:\\program files\\powershell\\6\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PT7HOME": "C:\\Program Files\\Cisco Packet Tracer 7.2.2",
+    "PUBLIC": "C:\\Users\\Public",
+    "QT_DEVICE_PIXEL_RATIO": "auto",
+    "restart_time": "0",
+    "status": "launching",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\Windows",
+    "TEMP": "C:\\Users\\CLIT-M~1\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\CLIT-M~1\\AppData\\Local\\Temp",
+    "treekill": "true",
+    "unique_id": "ef123a8a-2196-4539-8679-71840b6c6a9f",
+    "unstable_restarts": "0",
+    "USERDOMAIN": "NB-MOBILE",
+    "USERDOMAIN_ROAMINGPROFILE": "NB-MOBILE",
+    "username": "CLIT-MOBILE",
+    "USERNAME": "CLIT-MOBILE",
+    "USERPROFILE": "C:\\Users\\CLIT-MOBILE",
+    "vizion": "true",
+    "vizion_running": "false",
+    "VS140COMNTOOLS": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\",
+    "VS150COMCOMNTOOLS": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\Tools\\",
+    "watch": "false",
+    "windir": "C:\\Windows",
+    "windowsHide": "true"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\System32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\winmmbase.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\System32\\UMPDC.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\wshbth.dll"
+  ]
+}

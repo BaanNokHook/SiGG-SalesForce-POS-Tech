@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lazy loading images</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .images{display: flex;flex-wrap: wrap;}
+    .slot{width: 50%;}
+    img{display: block;width: 100%;height: auto;}
+    </style>
+    <script>
+    $(document).ready(function(){
+    var images = document.querySelectorAll('img')
+    var imageData = []
+    function replaceImage (node) {
+        if (
+          node.getAttribute('data-lazyload-replaced') ||
+          (window.scrollY + window.innerHeight) <= node.offsetTop
+        ) {
+          return
+        }
+        var newImage = new Image()
+        newImage.src = node.getAttribute('data-src')
+        newImage.onload = (function (event) {
+          setTimeout(function () {
+            node.parentElement.replaceChild(newImage, node)      
+          }, Math.random() * 2000 + 500)
+        }).bind(this)
+        
+        node.setAttribute('data-lazyload-replaced', true)
+      }
+      document.addEventListener('scroll', function (event) {
+        for (var i = 0, numImages = images.length; i < numImages; i++) {
+          replaceImage(images[i])
+        }
+      })
+      for (var i = 0, numImages = images.length; i < numImages; i++) {
+        images[i].onload = function (event) {
+          replaceImage(event.target)
+        }
+      }
+  });
+    </script>
+      </head>
+    
+    <body>
+        <div class="container">
+            <section class="images">
+              <div class="slot">
+                <img class="lazy-load" src="https://cdn.somedomain.tech/placeholder/samples/trees.jpg" data-src="https://cdn.somedomain.tech/samples/trees.jpg">
+              </div>
+            
+              <div class="slot">
+               <img class="lazy-load" src="https://cdn.somedomain.tech/placeholder/samples/leaf.jpg" data-src="https://cdn.somedomain.tech/samples/leaf.jpg">
+              </div>
+            
+              <div class="slot">
+                <img width="2000" height="3000" class="lazy-load" src="https://cdn.somedomain.tech/samples/bar.jpg" data-src="https://cdn.somedomain.tech/samples/bar.jpg">
+              </div>
+            
+              <div class="slot">
+               <img class="lazy-load" src="https://cdn.somedomain.tech/placeholder/samples/lonely-house.jpg" data-src="https://cdn.somedomain.tech/samples/lonely-house.jpg">
+              </div>
+            
+              <div class="slot">
+                <img class="lazy-load" src="https://cdn.somedomain.tech/placeholder/samples/chair.jpg" data-src="https://cdn.somedomain.tech/samples/chair.jpg">
+              </div>
+            
+              <div class="slot">
+               <img class="lazy-load" src="https://cdn.somedomain.tech/placeholder/samples/pumpkins.jpg" data-src="https://cdn.somedomain.tech/samples/pumpkins.jpg">
+              </div>
+            
+              <div class="slot">
+                <img class="lazy-load" src="https://cdn.somedomain.tech/placeholder/samples/bridge.jpg" data-src="https://cdn.somedomain.tech/samples/bridge.jpg">
+              </div>
+            
+              <div class="slot">
+               <img class="lazy-load" src="https://cdn.somedomain.tech/placeholder/samples/purple.jpg" data-src="https://cdn.somedomain.tech/samples/purple.jpg">
+              </div>
+            
+              <div class="slot">
+                <img class="lazy-load" src="https://cdn.somedomain.tech/placeholder/samples/girl2.jpg" data-src="https://cdn.somedomain.tech/samples/girl2.jpg">
+              </div>
+            
+              <div class="slot">
+                <img class="lazy-load" src="https://cdn.somedomain.tech/placeholder/samples/hammock.jpg" data-src="https://cdn.somedomain.tech/samples/hammock.jpg">
+              </div>
+            </section>
+        </div>
+    </body>
+</html>

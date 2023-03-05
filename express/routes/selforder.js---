@@ -1,0 +1,144 @@
+var express = require('express');
+var router = express.Router();
+
+var connection  = require('../database/db.js');
+var pool   = require('../database/pool.js');
+
+var rootParams = ':CompanyId/:BrandId/:OutletId';
+
+
+router.get('/getCategory/'+rootParams, function(req, res, next) {
+  pool.query("SELECT * FROM category WHERE `CompanyId` = '"+req.params.CompanyId+"' AND `BrandId` = '"+req.params.BrandId+"' AND `OutletId` = '"+req.params.OutletId+"'",function(err,rows)     {
+    if(err){
+     req.flash('error', err); 
+       //ERROR Render
+      }else{
+        //console.log(JSON.stringify(rows));
+        res.send(JSON.stringify(rows));
+      }
+    });
+});
+
+
+router.get('/getProduct/'+rootParams, function(req, res, next) {
+
+  (async () => {
+      try {
+        const rows = await pool.query("SELECT * FROM view_productdata WHERE view_productdata.CompanyId = '"+req.params.CompanyId+"' AND view_productdata.BrandId = '"+req.params.BrandId+"' AND view_productdata.OutletId = '"+req.params.OutletId+"' ");
+        //SELECT view_productdata.CompanyId, view_productdata.BrandId, view_productdata.OutletId, 
+        res.send(JSON.stringify(rows));
+      } finally {
+      }
+    })();
+});
+
+
+
+
+router.get('/category', function(req, res, next) {
+    pool.query("SELECT * FROM category",function(err,rows)     {
+      if(err){
+       req.flash('error', err); 
+         //ERROR Render
+        }else{
+          //console.log(JSON.stringify(rows));
+          res.send(JSON.stringify(rows));
+        }
+      });
+});
+
+
+router.get('/product', function(req, res, next) {
+
+  (async () => {
+      try {
+        const rows = await pool.query('SELECT * FROM view_productdata');
+        res.send(JSON.stringify(rows));
+      } finally {
+      }
+    })();
+});
+
+
+router.get('/getproductsize', function(req, res, next) {
+  (async () => {
+      try {
+        const rows = await pool.query('select * from view_productsizeall');
+        res.send(JSON.stringify(rows));
+      } finally {
+      }
+    })();
+});
+
+
+router.get('/getproductsize/'+rootParams, function(req, res, next) {
+  (async () => {
+      try {
+        const rows = await pool.query("SELECT * FROM view_productsizeall WHERE view_productsizeall.CompanyId = '"+req.params.CompanyId+"' AND view_productsizeall.BrandId = '"+req.params.BrandId+"' AND view_productsizeall.OutletId='"+req.params.OutletId+"';");
+        res.send(JSON.stringify(rows));
+      } finally {
+      }
+    })();
+});
+
+
+router.get('/getproductsize/:ItemId', function(req, res, next) {
+  console.log(req.params);
+  (async () => {
+      try {
+        const rows = await pool.query("select * from view_productsizeall WHERE `ItemId` = '"+req.params.ItemId+"'");
+        res.send(JSON.stringify(rows));
+      } finally {
+      }
+    })();
+});
+
+
+
+
+router.get('/clearOrder/:TABLENO', function(req, res, next) {
+  console.log(req.params);
+  (async () => {
+      try {
+        const rows = await pool.query("CALL clearOrdering('"+req.params.TABLENO+"')");
+        res.send(JSON.stringify(rows));
+      } finally {
+      }
+    })();
+});
+
+
+
+router.get('/getmodifylistall/', function(req, res, next) {
+  (async () => {
+      try {
+        const rows = await pool.query('SELECT * FROM `view_modifylistall`');
+        res.send(JSON.stringify(rows));
+      } finally {
+      }
+    })();
+});
+
+// getorderingall
+router.get('/getorderingall/', function(req, res, next) {
+  (async () => {
+      try {
+        const rows = await pool.query('SELECT * FROM `view_modifylistall`');
+        res.send(JSON.stringify(rows));
+      } finally {
+      }
+    })();
+});
+
+
+// getorderdetailall
+router.get('/getorderdetailall/', function(req, res, next) {
+  (async () => {
+      try {
+        const rows = await pool.query('SELECT * FROM `view_modifylistall`');
+        res.send(JSON.stringify(rows));
+      } finally {
+      }
+    })();
+});
+module.exports = router;
