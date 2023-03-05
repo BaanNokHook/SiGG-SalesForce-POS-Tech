@@ -159,12 +159,20 @@ export const sample_foods: Food[] = [
 ]
 
 export const sample_tags:Tag[] = [
-  { name: 'All', count: 14 },
-  { name: 'Zhejiang Cuisine', count: 4 },
-  { name: 'Fujian Cuisine', count: 3 },
-  { name: 'Anhui Cuisine', count: 3 },
-  { name: 'SlowFood', count: 2 },
-  { name: 'Sweet and Sour Pork', count: 2 },
-  { name: 'Fry', count: 1 },
-  { name: 'Soup', count: 1 },
+  { name: 'POT', count: 14 },
+  { name: 'Assorted Platter', count: 4 },
+  { name: 'Beef', count: 3 },
+  { name: 'Chicken', count: 3 },
+  { name: 'Duck', count: 2 },
+  { name: 'Seafood', count: 2 },
+  { name: 'Handmade Balls', count: 1 },
+  { name: 'Homemade Paste', count: 1 },
+  { name: 'Homemade Dummpling', count: 1 },
+  { name: 'Beancurd', count: 1 },
+  { name: 'Mushroom', count: 1 },
+  { name: 'Vegetable', count: 1 },
+  { name: 'Other', count: 1 },
+  { name: 'Rice&Noodles', count: 1 },
+  { name: 'Soft Drink', count: 1 },
+  { name: 'Alcohol', count: 1 },
 ]
